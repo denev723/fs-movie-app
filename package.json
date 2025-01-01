@@ -1,0 +1,24 @@
+{
+  "name": "fs-movie-app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "parcel ./index.html",
+    "build": "parcel build ./index.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/denev723/fs-movie-app.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/denev723/fs-movie-app/issues"
+  },
+  "homepage": "https://github.com/denev723/fs-movie-app#readme",
+  "devDependencies": {
+    "parcel": "^2.13.3"
+  }
+}
