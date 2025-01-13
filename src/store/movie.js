@@ -1,3 +1,4 @@
+require("dotenv").config();
 import { Store } from "../core/denev";
 
 const store = new Store({
@@ -21,7 +22,7 @@ export const searchMovies = async (page) => {
   }
   try {
     const res = await fetch(
-      `https://www.omdbapi.com?apikey=7035c60c&s=${store.state.searchText}&page=${page}`
+      `https://www.omdbapi.com?apikey=${process.env.API_KEY}&s=${store.state.searchText}&page=${page}`
     );
     const { Search, totalResults, Response, Error } = await res.json();
     if (Response === "True") {
