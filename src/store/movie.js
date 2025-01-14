@@ -20,7 +20,7 @@ export const searchMovies = async (page) => {
     store.state.message = "";
   }
   try {
-    const res = await fetch("/api/movie", {
+    const res = await fetch("/api/movieHandler", {
       method: "POST",
       body: JSON.stringify({
         title: store.state.searchText,
@@ -44,7 +44,7 @@ export const searchMovies = async (page) => {
 
 export const getMovieDetails = async (id) => {
   try {
-    const res = await fetch("/api/movie", {
+    const res = await fetch("/api/movieHandler", {
       method: "POST",
       body: JSON.stringify({
         id,
