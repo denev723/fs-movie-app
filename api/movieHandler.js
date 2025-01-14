@@ -1,4 +1,3 @@
-require("dotenv").config();
 import fetch from "node-fetch";
 
 const { OMDB_API_KEY } = process.env;
