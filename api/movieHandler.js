@@ -1,7 +1,7 @@
 require("dotenv").config();
 import fetch from "node-fetch";
 
-const APIKEY = process.env.OMDB_AP_KEY;
+const APIKEY = process.env.OMDB_API_KEY;
 
 export default async function hanlder(request, response) {
   const { title, page, id } = JSON.parse(request.body);
