@@ -1,7 +1,14 @@
 import { Component } from "../core/denev";
+import { ISearch as SimpleMovie } from "../store/movie";
+
+interface IProps {
+  [key: string]: unknown;
+  movie: SimpleMovie;
+}
 
 export default class MovieItem extends Component {
-  constructor(props) {
+  public props!: IProps;
+  constructor(props: IProps) {
     super({
       props,
       tagName: "a",
