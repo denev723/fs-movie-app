@@ -1,6 +1,15 @@
 import { Component } from "../core/denev";
 
+interface IState {
+  [key: string]: unknown;
+  menus: {
+    name: string;
+    href: string;
+  }[];
+}
+
 export default class TheHeader extends Component {
+  public state!: IState;
   constructor() {
     super({
       tagName: "header",
